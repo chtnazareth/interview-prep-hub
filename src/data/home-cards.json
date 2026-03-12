@@ -1,10 +1,10 @@
 {
-  "sectionIcon": "/img/globe.png",
-  "sectionIconAlt": "Globe",
-  "sectionTitle": "What Changed in 3 Years",
-  "sectionSubtitle": "The interview landscape shifted dramatically since 2023. Here\u2019s what you need to know.",
+  "sectionTitle": "The Interview Landscape in 2026",
+  "sectionSubtitle": "The tech interview world has transformed. AI tools, in-person returns, and new skill demands are reshaping how companies hire engineers.",
   "cards": [
     {
+      "image": "/img/cards/ai-interviews.png",
+      "imageAlt": "AI-enabled coding interview with AI assistant on screen",
       "icon": "/img/robot-2.png",
       "iconAlt": "Robot",
       "title": "AI-Enabled Interviews",
@@ -19,6 +19,8 @@
       }
     },
     {
+      "image": "/img/cards/in-person.png",
+      "imageAlt": "Corporate meeting room with face-to-face interview",
       "icon": "/img/company.png",
       "iconAlt": "Office",
       "title": "In-Person is Back",
@@ -32,6 +34,8 @@
       }
     },
     {
+      "image": "/img/cards/new-skills.png",
+      "imageAlt": "Developer dashboard with AI and ML metrics",
       "icon": "/img/brain.png",
       "iconAlt": "Brain",
       "title": "New Skills in Demand",
@@ -46,6 +50,8 @@
       }
     },
     {
+      "image": "/img/cards/system-design.png",
+      "imageAlt": "Whiteboard with system architecture and RAG pipeline diagram",
       "icon": "/img/gear.png",
       "iconAlt": "System Design",
       "title": "System Design Evolved",
@@ -61,6 +67,8 @@
       }
     },
     {
+      "image": "/img/cards/algorithms.png",
+      "imageAlt": "Code editor with complex algorithm on multiple monitors",
       "icon": "/img/code.png",
       "iconAlt": "Code",
       "title": "Harder Algorithmic Questions",
@@ -74,6 +82,8 @@
       }
     },
     {
+      "image": "/img/cards/company-split.png",
+      "imageAlt": "Split view of Big Tech office versus casual startup environment",
       "icon": "/img/scales.png",
       "iconAlt": "Balance",
       "title": "Company Split",

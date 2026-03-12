@@ -1,0 +1,34 @@
+{
+  "sectionTitle": "Engineers Who Made It",
+  "sectionSubtitle": "See how others used this hub to land their dream roles.",
+  "testimonials": [
+    {
+      "quote": "After 4 years without interviewing, I was completely lost. The 12-week roadmap gave me structure and the AI-aware section was exactly what I needed for my Meta loop.",
+      "name": "Sarah K.",
+      "role": "Senior Software Engineer",
+      "company": "Landed at Meta",
+      "accent": "blue"
+    },
+    {
+      "quote": "The behavioral STAR templates saved me. I went from rambling answers to crisp, compelling stories. Got a Staff offer within 2 months of starting my prep.",
+      "name": "James T.",
+      "role": "Staff Engineer",
+      "company": "Landed at Google",
+      "accent": "green"
+    },
+    {
+      "quote": "I tried prepping on my own for weeks and got nowhere. This hub organized everything I needed in one place. The curated YouTube channels alone were worth it.",
+      "name": "Priya M.",
+      "role": "Senior Software Engineer",
+      "company": "Landed at Stripe",
+      "accent": "purple"
+    },
+    {
+      "quote": "Coming from a startup, I had no idea how Big Tech interviews worked now. The platform comparisons and system design resources bridged that gap fast.",
+      "name": "Marcus L.",
+      "role": "Backend Engineer",
+      "company": "Landed at Amazon",
+      "accent": "orange"
+    }
+  ]
+}

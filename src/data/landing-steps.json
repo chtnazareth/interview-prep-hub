@@ -1,0 +1,21 @@
+{
+  "sectionTitle": "How It Works",
+  "sectionSubtitle": "Three steps to interview-ready confidence.",
+  "steps": [
+    {
+      "number": "01",
+      "title": "Assess & Plan",
+      "description": "Review what changed in interviews since you last prepared. Follow the 12-week roadmap tailored for senior engineers returning to the game."
+    },
+    {
+      "number": "02",
+      "title": "Study & Practice",
+      "description": "Work through curated courses, coding platforms, and behavioral frameworks. Track every item you complete along the way."
+    },
+    {
+      "number": "03",
+      "title": "Mock & Ship",
+      "description": "Run mock interviews, practice AI-aware scenarios, and refine your stories. Walk into interviews with confidence and a proven system."
+    }
+  ]
+}

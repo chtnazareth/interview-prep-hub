@@ -1,0 +1,42 @@
+{
+  "sectionTitle": "Everything You Need to Prepare",
+  "sectionSubtitle": "A complete toolkit built for the modern tech interview landscape.",
+  "features": [
+    {
+      "icon": "/img/compass.png",
+      "iconAlt": "Compass",
+      "title": "12-Week Structured Roadmap",
+      "description": "A phased plan from system design foundations through mock interviews, with trackable progress at every step."
+    },
+    {
+      "icon": "/img/robot-2.png",
+      "iconAlt": "AI",
+      "title": "AI-Aware Interview Practice",
+      "description": "Specific prep for AI-enabled interviews at companies like Meta and Canva. Learn to work with AI, not against it."
+    },
+    {
+      "icon": "/img/handshake.png",
+      "iconAlt": "Behavioral",
+      "title": "Behavioral & Leadership Stories",
+      "description": "STAR method templates for senior and staff-level scenarios. Build your story bank with structured prompts."
+    },
+    {
+      "icon": "/img/graduation-cap.png",
+      "iconAlt": "Courses",
+      "title": "Curated Courses & Channels",
+      "description": "Handpicked Udemy courses and YouTube channels from ex-FAANG engineers covering every interview topic."
+    },
+    {
+      "icon": "/img/laptop.png",
+      "iconAlt": "Platforms",
+      "title": "Practice Platforms & Tools",
+      "description": "12 platforms for coding practice, mock interviews, and AI-assisted preparation — all vetted and ranked."
+    },
+    {
+      "icon": "/img/bar-chart.png",
+      "iconAlt": "Progress",
+      "title": "Progress Tracking",
+      "description": "Check off items as you go. Your progress syncs across sessions so you never lose your place."
+    }
+  ]
+}

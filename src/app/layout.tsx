@@ -136,15 +136,38 @@ export default function RootLayout({
               {children}
 
               {/* Footer */}
+              <div className="footer-wave">
+                <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0,40 C360,80 720,0 1080,40 C1260,60 1380,50 1440,40 L1440,80 L0,80 Z"
+                    fill="rgba(88,166,255,0.04)"
+                  />
+                  <path
+                    d="M0,50 C320,70 640,20 960,50 C1200,70 1360,45 1440,50 L1440,80 L0,80 Z"
+                    fill="rgba(139,92,246,0.03)"
+                  />
+                </svg>
+              </div>
               <footer>
-                <p>
-                  <span className="footer-name">Built by Claudio Nazareth</span>
+                <div className="footer-brand">
+                  <div className="footer-brand-icon">
+                    <img src="/img/rocket.png" alt="Logo" />
+                  </div>
+                  <span className="footer-brand-name">Interview Prep Hub</span>
+                </div>
+                <p className="footer-tagline">
+                  Your structured guide for the AI era interview journey.
                 </p>
-                <p>
-                  Interview Prep Hub 2026 &mdash; A structured guide for the AI era
-                  interview journey.
-                </p>
-                <p style={{ marginTop: '4px' }}>
+                <div className="footer-links">
+                  <a href="/roadmap">Roadmap</a>
+                  <a href="/courses">Courses</a>
+                  <a href="/youtube">YouTube</a>
+                  <a href="/platforms">Platforms</a>
+                  <a href="/behavioral">Behavioral</a>
+                  <a href="/ai-aware">AI-Aware</a>
+                </div>
+                <div className="footer-divider" />
+                <p className="footer-credits">
                   Data sourced from Tech Interview Handbook, ByteByteGo,
                   Interviewing.io, and community research.
                 </p>
