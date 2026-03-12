@@ -8,7 +8,7 @@ import { useEffect, useState, useCallback } from 'react';
 import { getProgress } from '@/lib/progress';
 import navigation from '@/data/navigation.json';
 import { CopilotKit } from '@copilotkit/react-core';
-import { CopilotPopup } from '@copilotkit/react-ui';
+import { CopilotChat } from '@copilotkit/react-ui';
 import { useCopilotReadable } from '@copilotkit/react-core';
 
 function GlobalReadable({ progress, pathname }: { progress: { pct: number; done: number; total: number }; pathname: string }) {
@@ -131,30 +131,47 @@ export default function RootLayout({
 
         <CopilotKit runtimeUrl="/api/copilotkit">
           <GlobalReadable progress={progress} pathname={pathname} />
-          {children}
-          <CopilotPopup
-            instructions={SYSTEM_PROMPT}
-            labels={{
-              title: "Interview Prep Coach",
-              initial: "Hi! I'm your Interview Prep Coach. Ask me about study plans, concepts, or let me quiz you!",
-            }}
-          />
-        </CopilotKit>
+          <div className="app-layout">
+            <main className="app-main">
+              {children}
 
-        {/* Footer */}
-        <footer>
-          <p>
-            <span className="footer-name">Built by Claudio Nazareth</span>
-          </p>
-          <p>
-            Interview Prep Hub 2026 &mdash; A structured guide for the AI era
-            interview journey.
-          </p>
-          <p style={{ marginTop: '4px' }}>
-            Data sourced from Tech Interview Handbook, ByteByteGo,
-            Interviewing.io, and community research.
-          </p>
-        </footer>
+              {/* Footer */}
+              <footer>
+                <p>
+                  <span className="footer-name">Built by Claudio Nazareth</span>
+                </p>
+                <p>
+                  Interview Prep Hub 2026 &mdash; A structured guide for the AI era
+                  interview journey.
+                </p>
+                <p style={{ marginTop: '4px' }}>
+                  Data sourced from Tech Interview Handbook, ByteByteGo,
+                  Interviewing.io, and community research.
+                </p>
+              </footer>
+            </main>
+            <aside className="coach-sidebar">
+              <div className="coach-sidebar-header">
+                <div className="coach-avatar">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                    <path d="M2 17l10 5 10-5" />
+                    <path d="M2 12l10 5 10-5" />
+                  </svg>
+                </div>
+                <h2 className="coach-title">Interview Prep Coach</h2>
+              </div>
+              <CopilotChat
+                instructions={SYSTEM_PROMPT}
+                labels={{
+                  title: "Interview Prep Coach",
+                  initial: "Hi! I'm your Interview Prep Coach. Ask me about study plans, concepts, or let me quiz you!",
+                }}
+                className="coach-chat"
+              />
+            </aside>
+          </div>
+        </CopilotKit>
       </body>
     </html>
   );
