@@ -1,0 +1,134 @@
+{
+  "pageHero": {
+    "icon": "/img/toolbox.png",
+    "iconAlt": "Tools",
+    "title": "Platforms & Tools",
+    "subtitle": "Essential platforms for practice, mock interviews, and reference material."
+  },
+  "filters": [
+    { "value": "all", "label": "All" },
+    { "value": "practice", "label": "Practice" },
+    { "value": "mock", "label": "Mock Interviews" },
+    { "value": "system-design", "label": "System Design" },
+    { "value": "ai-tools", "label": "AI Tools" }
+  ],
+  "cards": [
+    {
+      "category": "practice",
+      "title": "LeetCode",
+      "description": "The standard for coding practice. Free tier has most problems. Focus on the curated lists (Blind 75, NeetCode 150) not random grinding.",
+      "tags": [
+        { "text": "Practice", "color": "green" },
+        { "text": "Free Tier" }
+      ],
+      "link": { "text": "leetcode.com", "url": "https://leetcode.com" }
+    },
+    {
+      "category": "practice",
+      "title": "NeetCode.io",
+      "description": "Structured roadmap organized by pattern. NeetCode 150 and Blind 75 curated lists with video explanations. Quality over quantity.",
+      "tags": [
+        { "text": "Practice", "color": "green" },
+        { "text": "Top Pick", "color": "green" }
+      ],
+      "link": { "text": "neetcode.io", "url": "https://neetcode.io" }
+    },
+    {
+      "category": "practice",
+      "title": "HackerRank",
+      "description": "Comprehensive free coding practice. Algorithms, data structures, SQL, functional programming across dozens of languages.",
+      "tags": [
+        { "text": "Practice", "color": "green" },
+        { "text": "Free" }
+      ],
+      "link": { "text": "hackerrank.com", "url": "https://www.hackerrank.com" }
+    },
+    {
+      "category": "practice",
+      "title": "Grind 75",
+      "description": "By the Tech Interview Handbook creator. Customizable study plan based on your time available. Picks optimal problems for maximum coverage.",
+      "tags": [
+        { "text": "Practice", "color": "green" },
+        { "text": "Free" }
+      ],
+      "link": { "text": "Grind 75", "url": "https://www.techinterviewhandbook.org/grind75" }
+    },
+    {
+      "category": "mock",
+      "title": "Pramp",
+      "description": "Free peer-to-peer mock interviews. You interview them, they interview you. Simulates real pressure with a real person watching.",
+      "tags": [
+        { "text": "Mock", "color": "orange" },
+        { "text": "Free" }
+      ],
+      "link": { "text": "pramp.com", "url": "https://www.pramp.com" }
+    },
+    {
+      "category": "mock",
+      "title": "Interviewing.io",
+      "description": "Anonymous mock interviews with engineers from top companies. Free tier available. Get real feedback from experienced interviewers.",
+      "tags": [
+        { "text": "Mock", "color": "orange" },
+        { "text": "Free Tier" }
+      ],
+      "link": { "text": "interviewing.io", "url": "https://interviewing.io" }
+    },
+    {
+      "category": "system-design",
+      "title": "ByteByteGo",
+      "description": "By Alex Xu. Deep dives into 50+ real-world architectures. Updated for 2026 with serverless, edge computing, and LLM integrations.",
+      "tags": [
+        { "text": "System Design" },
+        { "text": "Top Pick", "color": "green" }
+      ],
+      "link": { "text": "bytebytego.com", "url": "https://bytebytego.com" }
+    },
+    {
+      "category": "system-design",
+      "title": "System Design Handbook",
+      "description": "Complete reference for system design interviews. Comprehensive guide covering all major topics and patterns for 2026.",
+      "tags": [
+        { "text": "System Design" },
+        { "text": "Reference" }
+      ],
+      "link": { "text": "systemdesignhandbook.com", "url": "https://www.systemdesignhandbook.com" }
+    },
+    {
+      "category": "system-design",
+      "title": "Tech Interview Handbook",
+      "description": "Free, curated interview preparation materials. Covers coding, system design, behavioral, resume tips, and negotiation. Community-driven.",
+      "tags": [
+        { "text": "Reference" },
+        { "text": "Free" }
+      ],
+      "link": { "text": "techinterviewhandbook.org", "url": "https://www.techinterviewhandbook.org" }
+    },
+    {
+      "category": "ai-tools",
+      "title": "GitHub Copilot",
+      "description": "Practice coding with AI assistance. Learn to use it efficiently for interviews that allow AI tools. Available in VS Code and JetBrains.",
+      "tags": [
+        { "text": "AI Tool", "color": "purple" }
+      ],
+      "link": { "text": "GitHub Copilot", "url": "https://github.com/features/copilot" }
+    },
+    {
+      "category": "ai-tools",
+      "title": "Claude (Anthropic)",
+      "description": "Use for practicing problem-solving dialogue, explaining your approach, and getting feedback on solutions. Great for behavioral prep too.",
+      "tags": [
+        { "text": "AI Tool", "color": "purple" }
+      ],
+      "link": { "text": "claude.ai", "url": "https://claude.ai" }
+    },
+    {
+      "category": "ai-tools",
+      "title": "Cursor",
+      "description": "AI-powered code editor. Practice pair-programming with AI in a real IDE environment. Some companies use similar setups in interviews.",
+      "tags": [
+        { "text": "AI Tool", "color": "purple" }
+      ],
+      "link": { "text": "cursor.sh", "url": "https://cursor.sh" }
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "pageHero": {
+    "icon": "/img/compass.png",
+    "iconAlt": "Compass",
+    "title": "12-Week Preparation Roadmap",
+    "subtitle": "Senior/Staff focused. System Design first, coding refresh second, behavioral throughout."
+  },
+  "phases": [
+    {
+      "id": "phase1",
+      "title": "Weeks 1-2: System Design Foundations",
+      "description": "Build the mental framework for distributed systems.",
+      "items": [
+        { "id": "p1-1", "text": "Review CAP theorem, consistency models, ACID vs BASE" },
+        { "id": "p1-2", "text": "Study load balancing, caching strategies (CDN, Redis, Memcached)" },
+        { "id": "p1-3", "text": "Learn message queues (Kafka, SQS) and event-driven architecture" },
+        { "id": "p1-4", "text": "Start ByteByteGo or Grokking System Design course" },
+        { "id": "p1-5", "text": "Practice: Design a URL shortener (end-to-end)" }
+      ]
+    },
+    {
+      "id": "phase2",
+      "title": "Weeks 3-5: System Design Deep Dive",
+      "description": "Design real systems. Focus on trade-offs and scale.",
+      "items": [
+        { "id": "p2-1", "text": "Design a chat system (WhatsApp/Slack scale)" },
+        { "id": "p2-2", "text": "Design a rate limiter and notification system" },
+        { "id": "p2-3", "text": "Design a news feed / timeline (Twitter/Instagram)" },
+        { "id": "p2-4", "text": "Study database sharding, consistent hashing, replication" },
+        { "id": "p2-5", "text": "Design a system with LLM/RAG component (AI-era question)" },
+        { "id": "p2-6", "text": "Practice explaining designs out loud (record yourself)" }
+      ]
+    },
+    {
+      "id": "phase3",
+      "title": "Weeks 6-7: Coding Refresh",
+      "description": "Patterns over grinding. Focus on medium/hard. 75-100 problems max.",
+      "items": [
+        { "id": "p3-1", "text": "Complete NeetCode 75 (or Grind 75) - core patterns" },
+        { "id": "p3-2", "text": "Focus areas: graphs, dynamic programming, sliding window, trees" },
+        { "id": "p3-3", "text": "Practice time-boxed solving (25 min per problem)" },
+        { "id": "p3-4", "text": "Review Big-O analysis and space complexity trade-offs" },
+        { "id": "p3-5", "text": "Do 5-10 hard problems to stretch comfort zone" }
+      ]
+    },
+    {
+      "id": "phase4",
+      "title": "Weeks 8-9: Behavioral & Leadership",
+      "description": "STAR method. Prepare 6-8 stories showing staff-level impact.",
+      "items": [
+        { "id": "p4-1", "text": "Write 6-8 STAR stories (conflict, leadership, failure, success, deadline, cross-team)" },
+        { "id": "p4-2", "text": "Practice each story out loud (60-90 seconds)" },
+        { "id": "p4-3", "text": "Prepare \"why this company\" answers for target companies" },
+        { "id": "p4-4", "text": "Practice staff-level narratives: org impact, technical strategy, mentoring" },
+        { "id": "p4-5", "text": "Review common leadership principles (Amazon LPs, Google Googleyness)" }
+      ]
+    },
+    {
+      "id": "phase5",
+      "title": "Weeks 10-11: AI-Aware Practice",
+      "description": "Learn to use AI tools during interviews that allow them.",
+      "items": [
+        { "id": "p5-1", "text": "Solve LeetCode problems using Copilot/Claude (simulate AI-enabled interview)" },
+        { "id": "p5-2", "text": "Practice prompting AI for code generation, then verifying/debugging output" },
+        { "id": "p5-3", "text": "Design a system incorporating LLM components (RAG, agents, embeddings)" },
+        { "id": "p5-4", "text": "Learn to spot when AI output is wrong or suboptimal" },
+        { "id": "p5-5", "text": "Practice in CoderPad-like environment with AI assistant" }
+      ]
+    },
+    {
+      "id": "phase6",
+      "title": "Week 12: Mock Interviews & Final Review",
+      "description": "Simulate the real thing. Get feedback.",
+      "items": [
+        { "id": "p6-1", "text": "Do 2-3 mock interviews on Pramp or Interviewing.io" },
+        { "id": "p6-2", "text": "Do 1 paid mock with an ex-FAANG interviewer (optional)" },
+        { "id": "p6-3", "text": "Review weak areas identified during mocks" },
+        { "id": "p6-4", "text": "Finalize STAR stories and system design portfolio" },
+        { "id": "p6-5", "text": "Rest and go in confident" }
+      ]
+    }
+  ]
+}

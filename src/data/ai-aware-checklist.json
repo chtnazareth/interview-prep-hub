@@ -1,0 +1,43 @@
+{
+  "pageHero": {
+    "icon": "/img/crystal-ball.png",
+    "iconAlt": "Crystal Ball",
+    "title": "AI-Aware Interview Tips",
+    "subtitle": "How to prepare for interviews where AI tools are allowed (and expected)."
+  },
+  "coreShift": {
+    "title": "The Core Shift",
+    "text": "Interviewers now observe how you work WITH AI. The skill isn\u2019t using AI \u2014 it\u2019s knowing when AI output is wrong, incomplete, or unnecessarily complex. You\u2019re evaluated on problem-solving, code quality, and verification, NOT prompt engineering."
+  },
+  "checklistTitle": "What to Practice",
+  "items": [
+    { "id": "a-1", "text": "Solve problems with Copilot/Claude, verify and debug AI suggestions" },
+    { "id": "a-2", "text": "Practice prompting AI for well-defined subtasks (not end-to-end solving)" },
+    { "id": "a-3", "text": "Learn to spot common AI mistakes: off-by-one, wrong edge cases, overcomplicated solutions" },
+    { "id": "a-4", "text": "Design systems with LLM components: embeddings, vector DBs, RAG pipelines" },
+    { "id": "a-5", "text": "Practice explaining your reasoning out loud while using AI tools" }
+  ],
+  "dos": [
+    "Use AI as a productivity booster for well-defined subtasks",
+    "Always read and verify AI-generated code before accepting",
+    "Explain trade-offs in AI suggestions to the interviewer",
+    "Show you understand the code AI generates",
+    "Use AI for boilerplate, then customize and optimize"
+  ],
+  "donts": [
+    "Don\u2019t use AI as an end-to-end solver \u2014 that\u2019s not what they\u2019re testing",
+    "Don\u2019t accept AI output without reviewing it",
+    "Don\u2019t use AI tools in interviews that don\u2019t explicitly allow them",
+    "Don\u2019t rely on AI for your problem-solving reasoning",
+    "Don\u2019t use hidden AI tools (earbuds, second screen) \u2014 it\u2019s cheating"
+  ],
+  "ethicalWarning": {
+    "title": "Ethical Boundary",
+    "text": "Only use AI during interviews when explicitly allowed. Using AI secretly is considered cheating and can result in permanent bans from companies. Use AI for preparation, not deception."
+  },
+  "links": [
+    { "text": "AI-Aware Interview Guide", "url": "https://medium.com/@codegrey/the-new-ai-aware-coding-interview-how-to-prepare-in-2026-6a207d94b23a" },
+    { "text": "Meta AI Interview: Real Prompts", "url": "https://interviewing.io/blog/how-to-use-ai-in-meta-s-ai-assisted-coding-interview-with-real-prompts-and-examples" },
+    { "text": "Canva: Use AI in Our Interviews", "url": "https://www.canva.dev/blog/engineering/yes-you-can-use-ai-in-our-interviews/" }
+  ]
+}

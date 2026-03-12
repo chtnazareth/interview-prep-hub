@@ -1,0 +1,9 @@
+[
+  { "label": "About", "href": "/", "key": "about" },
+  { "label": "Roadmap", "href": "/roadmap", "key": "roadmap" },
+  { "label": "Courses", "href": "/courses", "key": "courses" },
+  { "label": "YouTube", "href": "/youtube", "key": "youtube" },
+  { "label": "Platforms", "href": "/platforms", "key": "platforms" },
+  { "label": "Behavioral", "href": "/behavioral", "key": "behavioral" },
+  { "label": "AI-Aware", "href": "/ai-aware", "key": "ai-aware" }
+]

@@ -1,0 +1,134 @@
+{
+  "pageHero": {
+    "icon": "/img/youtube-play.png",
+    "iconAlt": "YouTube",
+    "title": "YouTube Channels & Free Videos",
+    "subtitle": "The best free content for interview preparation, organized by focus area."
+  },
+  "filters": [
+    { "value": "all", "label": "All" },
+    { "value": "system-design", "label": "System Design" },
+    { "value": "coding", "label": "Coding" },
+    { "value": "algorithms", "label": "Algorithms" }
+  ],
+  "cards": [
+    {
+      "category": "system-design",
+      "icon": "/img/play.png",
+      "iconAlt": "Play",
+      "title": "ByteByteGo",
+      "description": "By Alex Xu (System Design Interview book author). Production-quality animations explaining distributed systems, databases, CDNs, and real architectures from Netflix, Uber, Airbnb.",
+      "tags": [
+        { "text": "System Design" },
+        { "text": "Top Pick", "color": "green" }
+      ],
+      "link": { "text": "Watch on YouTube", "url": "https://www.youtube.com/@ByteByteGo" }
+    },
+    {
+      "category": "system-design",
+      "icon": "/img/play.png",
+      "iconAlt": "Play",
+      "title": "Gaurav Sen",
+      "description": "Popular free system design education. Covers database sharding, consistent hashing, CAP theorem, load balancing, caching patterns, and full design walkthroughs.",
+      "tags": [
+        { "text": "System Design" }
+      ],
+      "link": { "text": "Watch on YouTube", "url": "https://www.youtube.com/@gaborsen" }
+    },
+    {
+      "category": "system-design",
+      "icon": "/img/play.png",
+      "iconAlt": "Play",
+      "title": "Hussein Nasser",
+      "description": "For intermediate to advanced engineers. Database internals, networking protocols, backend performance. Deep dives into Postgres, Redis, Kafka, gRPC with live coding.",
+      "tags": [
+        { "text": "System Design" },
+        { "text": "Advanced", "color": "purple" }
+      ],
+      "link": { "text": "Watch on YouTube", "url": "https://www.youtube.com/@haborsen" }
+    },
+    {
+      "category": "system-design",
+      "icon": "/img/play.png",
+      "iconAlt": "Play",
+      "title": "Exponent",
+      "description": "FAANG interview prep with mock system design sessions. Great for seeing how interviews actually flow and getting used to the format.",
+      "tags": [
+        { "text": "System Design" },
+        { "text": "Mock Interviews" }
+      ],
+      "link": { "text": "Watch on YouTube", "url": "https://www.youtube.com/@tryexponent" }
+    },
+    {
+      "category": "coding",
+      "icon": "/img/play.png",
+      "iconAlt": "Play",
+      "title": "NeetCode",
+      "description": "863K+ subscribers. Clear problem-solving strategies for Blind 75 and NeetCode 150. The go-to channel for structured LeetCode preparation with video explanations.",
+      "tags": [
+        { "text": "Coding", "color": "green" },
+        { "text": "Top Pick", "color": "green" }
+      ],
+      "link": { "text": "Watch on YouTube", "url": "https://www.youtube.com/@NeetCode" }
+    },
+    {
+      "category": "coding",
+      "icon": "/img/play.png",
+      "iconAlt": "Play",
+      "title": "CS Dojo",
+      "description": "By a former Google engineer. 1.92M subscribers. CS fundamentals and interview prep. Mixes whiteboard concepts with actual code for clear understanding.",
+      "tags": [
+        { "text": "Coding", "color": "green" },
+        { "text": "CS Fundamentals" }
+      ],
+      "link": { "text": "Watch on YouTube", "url": "https://www.youtube.com/@CSDojo" }
+    },
+    {
+      "category": "coding",
+      "icon": "/img/play.png",
+      "iconAlt": "Play",
+      "title": "Clement Mihailescu (AlgoExpert)",
+      "description": "AlgoExpert creator. 275K+ subscribers. FAANG interview strategies and coding problem walkthroughs with real-world context.",
+      "tags": [
+        { "text": "Coding", "color": "green" },
+        { "text": "FAANG" }
+      ],
+      "link": { "text": "Watch on YouTube", "url": "https://www.youtube.com/@caborsen" }
+    },
+    {
+      "category": "algorithms",
+      "icon": "/img/play.png",
+      "iconAlt": "Play",
+      "title": "Abdul Bari",
+      "description": "Teaches algorithms like a university professor. Thorough explanations with hand-drawn visualizations. Perfect for deep theoretical understanding.",
+      "tags": [
+        { "text": "Algorithms", "color": "purple" }
+      ],
+      "link": { "text": "Watch on YouTube", "url": "https://www.youtube.com/@abdul_bari" }
+    },
+    {
+      "category": "algorithms",
+      "icon": "/img/play.png",
+      "iconAlt": "Play",
+      "title": "William Fiset",
+      "description": "In-depth tutorials on algorithms and data structures. Makes complex topics approachable. Great complement to problem-solving practice.",
+      "tags": [
+        { "text": "Algorithms", "color": "purple" },
+        { "text": "DS", "color": "purple" }
+      ],
+      "link": { "text": "Watch on YouTube", "url": "https://www.youtube.com/@WilliamFiset-videos" }
+    },
+    {
+      "category": "algorithms",
+      "icon": "/img/play.png",
+      "iconAlt": "Play",
+      "title": "Back To Back SWE",
+      "description": "Clear explanations of complex coding interview topics. Known for breaking down difficult problems into understandable steps.",
+      "tags": [
+        { "text": "Algorithms", "color": "purple" },
+        { "text": "Coding", "color": "green" }
+      ],
+      "link": { "text": "Watch on YouTube", "url": "https://www.youtube.com/@BackToBackSWE" }
+    }
+  ]
+}

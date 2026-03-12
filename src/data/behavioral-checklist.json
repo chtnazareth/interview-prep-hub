@@ -1,0 +1,39 @@
+{
+  "pageHero": {
+    "icon": "/img/people.png",
+    "iconAlt": "People",
+    "title": "Behavioral Interview Guide",
+    "subtitle": "The STAR method is your framework. Prepare 6-8 stories that show senior/staff-level impact."
+  },
+  "starCards": [
+    { "letter": "S", "title": "Situation", "description": "Set the scene briefly. 15-20 seconds max. No full backstory needed." },
+    { "letter": "T", "title": "Task", "description": "Your specific role and what you needed to achieve. Make it personal." },
+    { "letter": "A", "title": "Action", "description": "What YOU did (not the team). Be specific about your decisions and steps." },
+    { "letter": "R", "title": "Result", "description": "Quantify the outcome. Use numbers: %, $, time saved, scale, team size." }
+  ],
+  "checklistTitle": "Story Categories to Prepare",
+  "items": [
+    { "id": "b-1", "text": "Conflict resolution - Disagreement with a teammate or stakeholder" },
+    { "id": "b-2", "text": "Technical leadership - Driving a major technical decision or architecture change" },
+    { "id": "b-3", "text": "Failure & learning - A mistake you made and how you recovered" },
+    { "id": "b-4", "text": "Cross-team impact - Working across teams/orgs to deliver results" },
+    { "id": "b-5", "text": "Tight deadline - Delivering under pressure with quality trade-offs" },
+    { "id": "b-6", "text": "Mentoring / growing others - How you\u2019ve developed team members" },
+    { "id": "b-7", "text": "Innovation - Something you built or proposed that wasn\u2019t asked for" },
+    { "id": "b-8", "text": "Ambiguity - Navigating unclear requirements or shifting priorities" }
+  ],
+  "tipBoxes": [
+    {
+      "title": "Pro Tips for Senior/Staff Level",
+      "text": "Focus on organizational impact, not just personal achievement. Talk about how your work influenced team direction, engineering culture, or company strategy. Use metrics whenever possible: revenue impact, performance improvements, reduced incidents, team velocity gains."
+    },
+    {
+      "title": "Timing Guide",
+      "text": "Keep each answer to 60-90 seconds. Situation: 15-20s. Task: 10s. Action: 30-40s (this is the meat). Result: 15-20s. Practice with a timer."
+    }
+  ],
+  "links": [
+    { "text": "Tech Interview Handbook: Behavioral Guide", "url": "https://www.techinterviewhandbook.org/behavioral-interview/" },
+    { "text": "STAR Method Mastery 2026", "url": "https://nspire.ai/blog/behavioral-interview-questions-2026-the-star-method-mastery-guide/" }
+  ]
+}

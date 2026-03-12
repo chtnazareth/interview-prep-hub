@@ -1,0 +1,89 @@
+{
+  "pageHero": {
+    "icon": "/img/graduation-cap.png",
+    "iconAlt": "Graduation",
+    "title": "Udemy Business Courses",
+    "subtitle": "Curated courses available on Udemy Business. Start with System Design, then coding."
+  },
+  "filters": [
+    { "value": "all", "label": "All" },
+    { "value": "system-design", "label": "System Design" },
+    { "value": "coding", "label": "Coding" },
+    { "value": "soft-skills", "label": "Soft Skills" },
+    { "value": "ai", "label": "AI/ML" }
+  ],
+  "cards": [
+    {
+      "category": "system-design",
+      "icon": "/img/puzzle.png",
+      "iconAlt": "System Design",
+      "title": "Mastering the System Design Interview",
+      "description": "By Frank Kane (ex-Amazon). 6 mock system design interviews with real-world questions. Insider tips from someone who interviewed thousands.",
+      "tags": [
+        { "text": "System Design" },
+        { "text": "Top Pick", "color": "green" }
+      ],
+      "link": { "text": "View on Udemy", "url": "https://www.udemy.com/course/system-design-interview-prep/" }
+    },
+    {
+      "category": "coding",
+      "icon": "/img/laptop.png",
+      "iconAlt": "Laptop",
+      "title": "Master the Coding Interview: DS + Algorithms",
+      "description": "By Andrei Neagoie (ZTM). 900K+ enrolled. Graduates at Google, Tesla, Amazon, Meta. Comprehensive DS&A with interview focus.",
+      "tags": [
+        { "text": "Coding" },
+        { "text": "900K+ students", "color": "green" }
+      ],
+      "link": { "text": "View on Udemy", "url": "https://www.udemy.com/course/master-the-coding-interview-data-structures-algorithms/" }
+    },
+    {
+      "category": "coding",
+      "icon": "/img/rocket.png",
+      "iconAlt": "Rocket",
+      "title": "Software Engineer Interview Masterclass",
+      "description": "5 courses in 1: coding interview, system design, behavioral, debugging, and DS&A. End-to-end preparation in a single course.",
+      "tags": [
+        { "text": "Coding" },
+        { "text": "System Design" },
+        { "text": "Behavioral" }
+      ],
+      "link": { "text": "View on Udemy", "url": "https://www.udemy.com/course/software-engineer-interview-masterclass-5-courses-in-1/" }
+    },
+    {
+      "category": "soft-skills",
+      "icon": "/img/handshake.png",
+      "iconAlt": "Handshake",
+      "title": "Coding Interview Preparation - The Softer Skills",
+      "description": "40-50% of candidates fail for non-technical reasons. This course covers communication, presentation, and interpersonal skills for interviews.",
+      "tags": [
+        { "text": "Soft Skills", "color": "orange" }
+      ],
+      "link": { "text": "View on Udemy", "url": "https://www.udemy.com/course/software-engineer-interview-preparation/" }
+    },
+    {
+      "category": "ai",
+      "icon": "/img/microchip.png",
+      "iconAlt": "AI Chip",
+      "title": "The AI Engineer Course 2026",
+      "description": "Complete AI engineering bootcamp. Ideal for software engineers transitioning into GenAI roles. Covers the entire AI engineering stack.",
+      "tags": [
+        { "text": "AI/ML", "color": "purple" },
+        { "text": "GenAI", "color": "purple" }
+      ],
+      "link": { "text": "Browse AI Courses", "url": "https://www.udemy.com/topic/coding-interview/" }
+    },
+    {
+      "category": "system-design",
+      "icon": "/img/bar-chart.png",
+      "iconAlt": "Chart",
+      "title": "Grokking the System Design Interview",
+      "description": "The original FAANG prep classic. Clear, repeatable framework for breaking down system design problems. Available on Educative (also check Udemy).",
+      "tags": [
+        { "text": "System Design" },
+        { "text": "Classic", "color": "green" }
+      ],
+      "link": { "text": "View on Educative", "url": "https://www.educative.io/courses/grokking-modern-system-design-interview-for-engineers-managers" }
+    }
+  ]
+}

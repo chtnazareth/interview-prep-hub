@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+
+# Next.js build
+.next/
+out/
+
+# Firebase
+.firebase/
+
+# Environment
+.env.local
+.env*.local
+
+# Misc
+*.log
+.DS_Store

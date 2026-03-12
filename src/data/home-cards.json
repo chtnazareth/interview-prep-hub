@@ -1,0 +1,91 @@
+{
+  "sectionIcon": "/img/globe.png",
+  "sectionIconAlt": "Globe",
+  "sectionTitle": "What Changed in 3 Years",
+  "sectionSubtitle": "The interview landscape shifted dramatically since 2023. Here\u2019s what you need to know.",
+  "cards": [
+    {
+      "icon": "/img/robot-2.png",
+      "iconAlt": "Robot",
+      "title": "AI-Enabled Interviews",
+      "description": "Meta rolled out AI-enabled coding interviews where candidates use AI assistants. Canva insists on it. The focus is on how you work with AI, not whether you memorized algorithms.",
+      "tags": [
+        { "text": "Meta" },
+        { "text": "Canva", "color": "green" }
+      ],
+      "link": {
+        "text": "Meta AI Interview Guide",
+        "url": "https://www.hellointerview.com/blog/meta-ai-enabled-coding"
+      }
+    },
+    {
+      "icon": "/img/company.png",
+      "iconAlt": "Office",
+      "title": "In-Person is Back",
+      "description": "On-site interviews rose from 24% (2022) to 38% (2025). Companies like Google brought back in-person rounds to combat AI-assisted cheating.",
+      "tags": [
+        { "text": "+58% increase", "color": "orange" }
+      ],
+      "link": {
+        "text": "State of Interviewing 2025",
+        "url": "https://www.interviewquery.com/p/ai-interview-trends-tech-hiring-2025"
+      }
+    },
+    {
+      "icon": "/img/brain.png",
+      "iconAlt": "Brain",
+      "title": "New Skills in Demand",
+      "description": "AI literacy, prompt engineering awareness, debugging AI output, designing systems with LLM components. 240% growth in AI-native engineering roles in early 2025.",
+      "tags": [
+        { "text": "AI Literacy", "color": "purple" },
+        { "text": "LLM Design", "color": "purple" }
+      ],
+      "link": {
+        "text": "Stand Out in AI Age",
+        "url": "https://www.coursereport.com/blog/technical-interviews-in-2026-how-to-stand-out-in-the-age-of-ai"
+      }
+    },
+    {
+      "icon": "/img/gear.png",
+      "iconAlt": "System Design",
+      "title": "System Design Evolved",
+      "description": "Now includes RAG pipelines, autonomous agents, LLM integration patterns. Expect questions about scalability vs. cost trade-offs with AI components.",
+      "tags": [
+        { "text": "RAG" },
+        { "text": "Agents" },
+        { "text": "LLMs" }
+      ],
+      "link": {
+        "text": "System Design Guide 2026",
+        "url": "https://www.systemdesignhandbook.com/guides/system-design-interview/"
+      }
+    },
+    {
+      "icon": "/img/code.png",
+      "iconAlt": "Code",
+      "title": "Harder Algorithmic Questions",
+      "description": "Big Tech is doubling down on harder problems to differentiate candidates who truly understand vs. those who lean on AI. Quality of reasoning matters more.",
+      "tags": [
+        { "text": "Big Tech", "color": "orange" }
+      ],
+      "link": {
+        "text": "How AI Changed Interviews",
+        "url": "https://interviewing.io/blog/how-is-ai-changing-interview-processes-not-much-and-a-whole-lot"
+      }
+    },
+    {
+      "icon": "/img/scales.png",
+      "iconAlt": "Balance",
+      "title": "Company Split",
+      "description": "Big Tech: harder problems + in-person. Startups: AI tools encouraged, real-world scenarios, pair programming with AI. Know your target.",
+      "tags": [
+        { "text": "Startups", "color": "green" },
+        { "text": "FAANG" }
+      ],
+      "link": {
+        "text": "AI-Aware Interview Guide",
+        "url": "https://medium.com/@codegrey/the-new-ai-aware-coding-interview-how-to-prepare-in-2026-6a207d94b23a"
+      }
+    }
+  ]
+}
