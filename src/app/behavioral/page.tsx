@@ -3,6 +3,7 @@
 import { useState, useCallback } from 'react';
 import { useScrollAnimation } from '@/lib/useScrollAnimation';
 import { getCheckedItems, toggleItem } from '@/lib/progress';
+import { useCopilotReadable, useCopilotAction } from '@copilotkit/react-core';
 import data from '@/data/behavioral-checklist.json';
 
 export default function BehavioralPage() {
@@ -13,6 +14,23 @@ export default function BehavioralPage() {
     const updated = toggleItem(id);
     setChecked({ ...updated });
   }, []);
+
+  useCopilotReadable({
+    description: "Behavioral interview guide with STAR method and 8 story categories to prepare",
+    value: JSON.stringify({
+      starMethod: data.starCards,
+      storyCategories: data.items.map((item) => ({
+        id: item.id, text: item.text, done: !!checked[item.id],
+      })),
+    }),
+  });
+
+  useCopilotAction({
+    name: "toggleBehavioralItem",
+    description: "Toggle a behavioral story category as done or undone",
+    parameters: [{ name: "itemId", type: "string" as const, description: "Item ID e.g. b-1 through b-8", required: true }],
+    handler: ({ itemId }) => { handleToggle(itemId); },
+  });
 
   return (
     <>

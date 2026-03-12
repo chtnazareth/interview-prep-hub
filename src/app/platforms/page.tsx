@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { useScrollAnimation } from '@/lib/useScrollAnimation';
+import { useCopilotReadable } from '@copilotkit/react-core';
 import data from '@/data/platforms.json';
 
 function TagSpan({ text, color }: { text: string; color?: string }) {
@@ -12,6 +13,13 @@ function TagSpan({ text, color }: { text: string; color?: string }) {
 export default function PlatformsPage() {
   useScrollAnimation();
   const [activeFilter, setActiveFilter] = useState('all');
+
+  useCopilotReadable({
+    description: "Practice platforms and tools: practice sites, mock interviews, system design references, AI tools",
+    value: JSON.stringify(data.cards.map((card) => ({
+      title: card.title, category: card.category, description: card.description,
+    }))),
+  });
 
   return (
     <>

@@ -1,0 +1,16 @@
+/* CopilotKit Dark Glassmorphism Theme Overrides */
+:root {
+  --copilot-kit-primary-color: #58a6ff;
+  --copilot-kit-contrast-color: #ffffff;
+  --copilot-kit-background-color: #0d1117;
+  --copilot-kit-secondary-color: #161b22;
+  --copilot-kit-separator-color: rgba(255, 255, 255, 0.08);
+  --copilot-kit-muted-color: #8b949e;
+  --copilot-kit-response-button-background-color: rgba(88, 166, 255, 0.12);
+  --copilot-kit-response-button-color: #58a6ff;
+}
+
+/* Ensure popup sits above orbs but below modals */
+[class*="copilotKit"] {
+  z-index: 90;
+}

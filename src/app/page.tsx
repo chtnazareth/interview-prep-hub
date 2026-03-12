@@ -2,6 +2,7 @@
 
 import { useEffect } from 'react';
 import { useScrollAnimation } from '@/lib/useScrollAnimation';
+import { useCopilotReadable } from '@copilotkit/react-core';
 import homeData from '@/data/home-cards.json';
 
 function TagSpan({ text, color }: { text: string; color?: string }) {
@@ -11,6 +12,14 @@ function TagSpan({ text, color }: { text: string; color?: string }) {
 
 export default function HomePage() {
   useScrollAnimation();
+
+  useCopilotReadable({
+    description: "Home page showing what changed in tech interviews: AI-enabled interviews, in-person returning, new skills, system design evolution, harder algorithms, company split",
+    value: JSON.stringify(homeData.cards.map((card) => ({
+      title: card.title,
+      description: card.description,
+    }))),
+  });
 
   // Legacy hash redirect for old bookmarks
   useEffect(() => {
