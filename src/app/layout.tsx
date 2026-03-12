@@ -79,14 +79,11 @@ export default function RootLayout({
         <title>Interview Prep Hub 2026</title>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet" />
       </head>
       <body>
-        {/* Gradient Orbs */}
-        <div className="orb orb-1" />
-        <div className="orb orb-2" />
-        <div className="orb orb-3" />
-        <div className="orb orb-4" />
-
         {/* Nav */}
         <nav>
           <div className="logo-area">
@@ -140,11 +137,11 @@ export default function RootLayout({
                 <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M0,40 C360,80 720,0 1080,40 C1260,60 1380,50 1440,40 L1440,80 L0,80 Z"
-                    fill="rgba(88,166,255,0.04)"
+                    fill="rgba(66,133,244,0.03)"
                   />
                   <path
                     d="M0,50 C320,70 640,20 960,50 C1200,70 1360,45 1440,50 L1440,80 L0,80 Z"
-                    fill="rgba(139,92,246,0.03)"
+                    fill="rgba(124,77,255,0.02)"
                   />
                 </svg>
               </div>
