@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { useScrollAnimation } from '@/lib/useScrollAnimation';
+import { useCopilotReadable } from '@copilotkit/react-core';
 import data from '@/data/courses.json';
 
 function TagSpan({ text, color }: { text: string; color?: string }) {
@@ -12,6 +13,13 @@ function TagSpan({ text, color }: { text: string; color?: string }) {
 export default function CoursesPage() {
   useScrollAnimation();
   const [activeFilter, setActiveFilter] = useState('all');
+
+  useCopilotReadable({
+    description: "Available Udemy courses for interview prep by category: system-design, coding, soft-skills, ai",
+    value: JSON.stringify(data.cards.map((card) => ({
+      title: card.title, category: card.category, description: card.description,
+    }))),
+  });
 
   return (
     <>

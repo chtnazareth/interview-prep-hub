@@ -3,6 +3,7 @@
 import { useState, useCallback } from 'react';
 import { useScrollAnimation } from '@/lib/useScrollAnimation';
 import { getCheckedItems, toggleItem } from '@/lib/progress';
+import { useCopilotReadable, useCopilotAction } from '@copilotkit/react-core';
 import data from '@/data/ai-aware-checklist.json';
 
 export default function AiAwarePage() {
@@ -13,6 +14,24 @@ export default function AiAwarePage() {
     const updated = toggleItem(id);
     setChecked({ ...updated });
   }, []);
+
+  useCopilotReadable({
+    description: "AI-Aware interview tips with 5 practice items, Do's/Don'ts, and ethical warning",
+    value: JSON.stringify({
+      practiceItems: data.items.map((item) => ({
+        id: item.id, text: item.text, done: !!checked[item.id],
+      })),
+      dos: data.dos,
+      donts: data.donts,
+    }),
+  });
+
+  useCopilotAction({
+    name: "toggleAiAwareItem",
+    description: "Toggle an AI-aware practice item as done or undone",
+    parameters: [{ name: "itemId", type: "string" as const, description: "Item ID e.g. a-1 through a-5", required: true }],
+    handler: ({ itemId }) => { handleToggle(itemId); },
+  });
 
   return (
     <>

@@ -3,6 +3,7 @@
 import { useState, useCallback } from 'react';
 import { useScrollAnimation } from '@/lib/useScrollAnimation';
 import { getCheckedItems, toggleItem } from '@/lib/progress';
+import { useCopilotReadable, useCopilotAction } from '@copilotkit/react-core';
 import data from '@/data/roadmap-checklist.json';
 
 export default function RoadmapPage() {
@@ -13,6 +14,23 @@ export default function RoadmapPage() {
     const updated = toggleItem(id);
     setChecked({ ...updated });
   }, []);
+
+  useCopilotReadable({
+    description: "12-week interview prep roadmap with 6 phases and 31 checklist items",
+    value: JSON.stringify(data.phases.map((phase) => ({
+      title: phase.title,
+      items: phase.items.map((item) => ({
+        id: item.id, text: item.text, done: !!checked[item.id],
+      })),
+    }))),
+  });
+
+  useCopilotAction({
+    name: "toggleRoadmapItem",
+    description: "Toggle a roadmap checklist item as done or undone",
+    parameters: [{ name: "itemId", type: "string" as const, description: "Item ID e.g. p1-1, p2-3, p6-5", required: true }],
+    handler: ({ itemId }) => { handleToggle(itemId); },
+  });
 
   // Check if all items in a phase are completed
   function isPhaseComplete(items: { id: string }[]) {
