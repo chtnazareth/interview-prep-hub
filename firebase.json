@@ -7,6 +7,12 @@
       "**/.*",
       "**/node_modules/**"
     ],
+    "rewrites": [
+      {
+        "source": "/api/copilotkit",
+        "function": "copilotkit"
+      }
+    ],
     "headers": [
       {
         "source": "**/*.@(css|js)",
@@ -21,5 +27,9 @@
         ]
       }
     ]
+  },
+  "functions": {
+    "source": "functions",
+    "runtime": "nodejs20"
   }
 }
