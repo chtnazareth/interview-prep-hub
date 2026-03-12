@@ -3,6 +3,7 @@
   "sectionSubtitle": "The tech interview world has transformed. AI tools, in-person returns, and new skill demands are reshaping how companies hire engineers.",
   "cards": [
     {
+      "video": "/img/cards/ai-interviews.mp4",
       "image": "/img/cards/ai-interviews.png",
       "imageAlt": "AI-enabled coding interview with AI assistant on screen",
       "icon": "/img/robot-2.png",

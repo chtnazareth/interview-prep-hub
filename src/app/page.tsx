@@ -80,7 +80,16 @@ export default function HomePage() {
             {homeData.cards.map((card, i) => (
               <div className="card image-card" key={i}>
                 <div className="card-image-wrapper">
-                  {card.image ? (
+                  {card.video ? (
+                    <video
+                      src={card.video}
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                      poster={card.image}
+                    />
+                  ) : card.image ? (
                     <img
                       src={card.image}
                       alt={card.imageAlt}
@@ -94,7 +103,7 @@ export default function HomePage() {
                   ) : null}
                   <div
                     className="card-image-placeholder"
-                    style={{ display: card.image ? 'none' : 'flex' }}
+                    style={{ display: card.image || card.video ? 'none' : 'flex' }}
                   >
                     <img src={card.icon} alt={card.iconAlt} />
                   </div>
