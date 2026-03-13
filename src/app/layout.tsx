@@ -8,8 +8,9 @@ import { useEffect, useState, useCallback } from 'react';
 import { getProgress } from '@/lib/progress';
 import navigation from '@/data/navigation.json';
 import { CopilotKit } from '@copilotkit/react-core';
-import { CopilotChat } from '@copilotkit/react-ui';
+import { CopilotPopup } from '@copilotkit/react-ui';
 import { useCopilotReadable } from '@copilotkit/react-core';
+import { TapedFooter } from '@/components/ui/footer-taped-design';
 
 function GlobalReadable({ progress, pathname }: { progress: { pct: number; done: number; total: number }; pathname: string }) {
   useCopilotReadable({
@@ -128,69 +129,19 @@ export default function RootLayout({
 
         <CopilotKit runtimeUrl="/api/copilotkit">
           <GlobalReadable progress={progress} pathname={pathname} />
-          <div className="app-layout">
-            <main className="app-main">
-              {children}
+          <main>
+            {children}
 
-              {/* Footer */}
-              <div className="footer-wave">
-                <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M0,40 C360,80 720,0 1080,40 C1260,60 1380,50 1440,40 L1440,80 L0,80 Z"
-                    fill="rgba(66,133,244,0.03)"
-                  />
-                  <path
-                    d="M0,50 C320,70 640,20 960,50 C1200,70 1360,45 1440,50 L1440,80 L0,80 Z"
-                    fill="rgba(124,77,255,0.02)"
-                  />
-                </svg>
-              </div>
-              <footer>
-                <div className="footer-brand">
-                  <div className="footer-brand-icon">
-                    <img src="/img/rocket.png" alt="Logo" />
-                  </div>
-                  <span className="footer-brand-name">Interview Prep Hub</span>
-                </div>
-                <p className="footer-tagline">
-                  Your structured guide for the AI era interview journey.
-                </p>
-                <div className="footer-links">
-                  <a href="/roadmap">Roadmap</a>
-                  <a href="/courses">Courses</a>
-                  <a href="/youtube">YouTube</a>
-                  <a href="/platforms">Platforms</a>
-                  <a href="/behavioral">Behavioral</a>
-                  <a href="/ai-aware">AI-Aware</a>
-                </div>
-                <div className="footer-divider" />
-                <p className="footer-credits">
-                  Data sourced from Tech Interview Handbook, ByteByteGo,
-                  Interviewing.io, and community research.
-                </p>
-              </footer>
-            </main>
-            <aside className="coach-sidebar">
-              <div className="coach-sidebar-header">
-                <div className="coach-avatar">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M12 2L2 7l10 5 10-5-10-5z" />
-                    <path d="M2 17l10 5 10-5" />
-                    <path d="M2 12l10 5 10-5" />
-                  </svg>
-                </div>
-                <h2 className="coach-title">Interview Prep Coach</h2>
-              </div>
-              <CopilotChat
-                instructions={SYSTEM_PROMPT}
-                labels={{
-                  title: "Interview Prep Coach",
-                  initial: "Hi! I'm your Interview Prep Coach. Ask me about study plans, concepts, or let me quiz you!",
-                }}
-                className="coach-chat"
-              />
-            </aside>
-          </div>
+          </main>
+          {/* Footer */}
+          <TapedFooter />
+          <CopilotPopup
+            instructions={SYSTEM_PROMPT}
+            labels={{
+              title: "Interview Prep Coach",
+              initial: "Hi! I'm your Interview Prep Coach. Ask me about study plans, concepts, or let me quiz you!",
+            }}
+          />
         </CopilotKit>
       </body>
     </html>

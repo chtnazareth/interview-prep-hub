@@ -5,6 +5,7 @@
     {
       "icon": "/img/robot-2.png",
       "iconAlt": "Robot",
+      "video": "/img/cards/ai-interviews.mp4",
       "title": "AI-Enabled Interviews",
       "description": "Meta rolled out AI-enabled coding interviews where candidates use AI assistants. Canva insists on it. The focus is on how you work with AI, not whether you memorized algorithms.",
       "tags": [
@@ -19,6 +20,7 @@
     {
       "icon": "/img/company.png",
       "iconAlt": "Office",
+      "image": "/img/cards/in-person.png",
       "title": "In-Person is Back",
       "description": "On-site interviews rose from 24% (2022) to 38% (2025). Companies like Google brought back in-person rounds to combat AI-assisted cheating.",
       "tags": [

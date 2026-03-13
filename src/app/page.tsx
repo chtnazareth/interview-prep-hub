@@ -5,6 +5,7 @@ import { useScrollAnimation } from '@/lib/useScrollAnimation';
 import { useCopilotReadable } from '@copilotkit/react-core';
 import { CreativePricing } from '@/components/ui/creative-pricing';
 import type { PricingTier } from '@/components/ui/creative-pricing';
+import { RainingLettersHero } from '@/components/ui/modern-animated-hero-section';
 import { Pencil, Star, Sparkles } from 'lucide-react';
 import homeData from '@/data/home-cards.json';
 import featuresData from '@/data/landing-features.json';
@@ -68,24 +69,8 @@ export default function HomePage() {
 
   return (
     <>
-      {/* Section 1: Hero */}
-      <div className="hero">
-        <h1>
-          Interview Prep <span>Hub 2026</span>
-        </h1>
-        <p>
-          A structured guide for engineers returning to the interview game in
-          the AI era.
-        </p>
-        <div className="hero-stats">
-          <span className="hero-stat">6 Sections</span>
-          <span className="hero-stat">44 Checklist Items</span>
-          <span className="hero-stat">12-Week Plan</span>
-        </div>
-        <a href="/roadmap" className="hero-cta">
-          Start Your Prep
-        </a>
-      </div>
+      {/* Section 1: Raining Letters Hero */}
+      <RainingLettersHero />
 
       <div className="container">
         {/* Section 2: The Interview Landscape — BENTO GRID */}
@@ -98,12 +83,25 @@ export default function HomePage() {
             {homeData.cards.map((card, i) => (
               <div key={i} className="card image-card">
                 <div className="card-image-wrapper">
-                  <div
-                    className="card-image-placeholder"
-                    style={{ display: 'flex' }}
-                  >
-                    <img src={card.icon} alt={card.iconAlt} />
-                  </div>
+                  {card.video ? (
+                    <video
+                      className="card-video"
+                      src={card.video}
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                    />
+                  ) : card.image ? (
+                    <img src={card.image} alt={card.iconAlt} />
+                  ) : (
+                    <div
+                      className="card-image-placeholder"
+                      style={{ display: 'flex' }}
+                    >
+                      <img src={card.icon} alt={card.iconAlt} />
+                    </div>
+                  )}
                 </div>
                 <div className="card-body">
                   <h3>{card.title}</h3>

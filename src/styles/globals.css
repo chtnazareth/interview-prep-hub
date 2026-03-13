@@ -21,7 +21,7 @@
   --tag-bg: rgba(59,130,246,0.08);
   --tag-text: #3b82f6;
   --check-done: #22c55e;
-  --nav-h: 64px;
+  --nav-h: 72px;
   --border: 2px solid #18181b;
   --shadow: 4px 4px 0px 0px #18181b;
   --shadow-hover: 8px 8px 0px 0px #18181b;
@@ -43,6 +43,9 @@ a:hover { text-decoration: underline; }
 
 .orb { display: none; }
 
+/* Raining Letters hero: scramble decode char */
+.dud { color: #00ff00; opacity: 0.7; }
+
 /* =============================================
    NAV — thick bottom border, handwritten logo
    ============================================= */
@@ -50,7 +53,7 @@ nav {
   position: sticky; top: 0; z-index: 100;
   background: rgba(255,255,255,0.95);
   backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
-  border-bottom: 2px solid #18181b;
+  border-bottom: 3px solid #18181b;
   height: var(--nav-h);
   display: grid; grid-template-columns: 1fr auto 1fr;
   align-items: center;
@@ -73,7 +76,7 @@ nav .logo-icon {
 }
 nav .logo-icon img { width: 100%; height: 100%; object-fit: contain; }
 nav .logo-text {
-  font-weight: 700; font-size: 22px;
+  font-weight: 700; font-size: 26px;
   color: var(--text);
   font-family: 'Caveat', cursive;
 }
@@ -81,7 +84,7 @@ nav .nav-links {
   display: flex; align-items: center; gap: 4px; justify-content: center;
 }
 nav a.nav-link {
-  color: var(--text-muted); font-size: 18px; font-weight: 600;
+  color: var(--text-muted); font-size: 24px; font-weight: 600;
   padding: 6px 14px; border-radius: 10px; white-space: nowrap;
   transition: all .2s;
   font-family: 'Caveat', cursive;
@@ -583,72 +586,12 @@ section + section { border-top: none; }
 }
 
 /* =============================================
-   FOOTER
+   FOOTER — Taped card design (component-driven)
    ============================================= */
-.footer-wave {
-  position: relative; z-index: 1; margin-top: -1px;
-}
-.footer-wave svg {
-  display: block; width: 100%;
-}
-footer {
-  text-align: center; padding: 48px 24px 40px;
-  color: var(--text-muted); font-size: 16px;
-  background: var(--bg-alt);
-  border-top: 2px solid #18181b;
-  position: relative; z-index: 1;
-}
-.footer-brand {
-  display: flex; align-items: center; justify-content: center; gap: 10px;
-  margin-bottom: 16px;
-}
-.footer-brand-icon {
-  width: 32px; height: 32px; border-radius: 50%;
-  border: 2px solid #18181b;
-  display: flex; align-items: center; justify-content: center;
-  overflow: hidden; padding: 3px;
-  background: #fff;
-}
-.footer-brand-icon img { width: 100%; height: 100%; object-fit: contain; }
-.footer-brand-name {
-  font-size: 24px; font-weight: 700;
-  color: var(--text);
-  font-family: 'Caveat', cursive;
-}
-.footer-tagline {
-  font-size: 18px; color: var(--text-muted); margin-bottom: 20px;
-  font-family: 'Caveat', cursive;
-}
-.footer-links {
-  display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;
-  margin-bottom: 20px;
-}
-.footer-links a {
-  color: var(--text-muted); font-size: 18px; font-weight: 600;
-  transition: color .3s;
-  font-family: 'Caveat', cursive;
-}
-.footer-links a:hover { color: var(--text); text-decoration: none; }
-.footer-divider {
-  width: 60px; height: 2px; margin: 0 auto 16px;
-  background: #18181b;
-  border-radius: 2px;
-}
-.footer-credits {
-  font-size: 15px; color: var(--text-muted); line-height: 1.6;
-  font-family: 'Caveat', cursive;
-}
 
 /* =============================================
    APP LAYOUT
    ============================================= */
-.app-layout {
-  display: flex;
-}
-.app-main {
-  flex: 1;
-  min-width: 0;
-}
 
 /* =============================================
    RESPONSIVE
